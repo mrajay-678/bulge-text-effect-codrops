@@ -101,7 +101,7 @@ function Scene() {
         </div>
       </Html>
       <mesh>
-        <planeGeometry args={[width, 4.8, 500, 500]} />
+        <planeGeometry args={[width, 4.6, 500, 500]} />
         <CustomShaderMaterial
           ref={materialRef}
           baseMaterial={THREE.MeshStandardMaterial}
