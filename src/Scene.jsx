@@ -12,7 +12,7 @@ import vertexShader from "./shaders/vertex.glsl";
 import fragmentShader from "./shaders/fragment.glsl";
 import html2canvas from "html2canvas";
 
-const useDomToCanvas = (domEl) => {
+const useDomToCanvas = domEl => {
   const [texture, setTexture] = useState();
   useEffect(() => {
     if (!domEl) return;
@@ -48,7 +48,12 @@ function Lights() {
     decay: { value: 1, min: 0, max: 5, step: 0.1 },
     position: { value: [2, 4, 6] },
   });
-  return <pointLight ref={pointLightRef} {...config} />;
+  return (
+    <pointLight
+      ref={pointLightRef}
+      {...config}
+    />
+  );
 }
 
 function Scene() {
@@ -79,13 +84,19 @@ function Scene() {
 
   return (
     <>
-      <Html zIndexRange={[-1, -10]} prepend fullscreen>
-        <div ref={(el) => setDomEl(el)} className="dom-element">
+      <Html
+        zIndexRange={[-1, -10]}
+        prepend
+        fullscreen
+      >
+        <div
+          ref={el => setDomEl(el)}
+          className="dom-element"
+        >
           <p className="flex flex-col">
-            WHEN <br />
-            WILL <br />
-            WE <br />
-            MEET ?<br />
+            PROJECT <br />
+            REINVENTION <br />
+            HMT ONCE AGAIN <br />
           </p>
         </div>
       </Html>
