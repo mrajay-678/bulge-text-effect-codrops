@@ -91,7 +91,7 @@ function Scene() {
       >
         <div
           ref={el => setDomEl(el)}
-          className="dom-element"
+          className="dom-element opacity-0"
         >
           <p className="flex flex-col">
             PROJECT <br />
@@ -101,7 +101,7 @@ function Scene() {
         </div>
       </Html>
       <mesh>
-        <planeGeometry args={[width, height, 254, 254]} />
+        <planeGeometry args={[width, 4, 254, 254]} />
         <CustomShaderMaterial
           ref={materialRef}
           baseMaterial={THREE.MeshStandardMaterial}
