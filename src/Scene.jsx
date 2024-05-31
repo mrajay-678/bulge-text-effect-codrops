@@ -91,7 +91,7 @@ function Scene() {
       >
         <div
           ref={el => setDomEl(el)}
-          className="dom-element opacity-0"
+          className="dom-element"
         >
           <p className="flex flex-col">
             PROJECT <br />

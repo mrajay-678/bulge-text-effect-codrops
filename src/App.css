@@ -83,5 +83,9 @@
     padding-left: 3vw;
     line-height: 0.8;
     font-weight: 700;
+    opacity: 1;
   }
+}
+canvas {
+  background-color: #000;
 }
